@@ -1,1 +1,118 @@
 @import "tailwindcss";
+
+/*
+  Palette Role&Fairies
+  Attention : ici, 100 = le plus sombre et 900 = le plus clair
+  (c'est l'inverse de la convention habituelle de Tailwind).
+*/
+@theme {
+  --color-stormy-teal: #006466;
+  --color-stormy-teal-100: #001414;
+  --color-stormy-teal-200: #002829;
+  --color-stormy-teal-300: #003c3d;
+  --color-stormy-teal-400: #005052;
+  --color-stormy-teal-500: #006466;
+  --color-stormy-teal-600: #00b5b8;
+  --color-stormy-teal-700: #0afbff;
+  --color-stormy-teal-800: #5cfcff;
+  --color-stormy-teal-900: #adfeff;
+
+  --color-dark-teal: #065a60;
+  --color-dark-teal-100: #011213;
+  --color-dark-teal-200: #022426;
+  --color-dark-teal-300: #04363a;
+  --color-dark-teal-400: #05484d;
+  --color-dark-teal-500: #065a60;
+  --color-dark-teal-600: #0ba2ad;
+  --color-dark-teal-700: #19e2f0;
+  --color-dark-teal-800: #66ecf5;
+  --color-dark-teal-900: #b2f5fa;
+
+  --color-deep-teal: #0b525b;
+  --color-deep-teal-100: #021012;
+  --color-deep-teal-200: #042124;
+  --color-deep-teal-300: #073136;
+  --color-deep-teal-400: #094149;
+  --color-deep-teal-500: #0b525b;
+  --color-deep-teal-600: #1493a3;
+  --color-deep-teal-700: #25cee4;
+  --color-deep-teal-800: #6edeed;
+  --color-deep-teal-900: #b6eff6;
+
+  --color-abyss-teal: #144552;
+  --color-abyss-teal-100: #040e10;
+  --color-abyss-teal-200: #081b21;
+  --color-abyss-teal-300: #0c2931;
+  --color-abyss-teal-400: #103742;
+  --color-abyss-teal-500: #144552;
+  --color-abyss-teal-600: #247c94;
+  --color-abyss-teal-700: #3aafcf;
+  --color-abyss-teal-800: #7ccadf;
+  --color-abyss-teal-900: #bde4ef;
+
+  --color-charcoal-blue: #1b3a4b;
+  --color-charcoal-blue-100: #050c0f;
+  --color-charcoal-blue-200: #0b171e;
+  --color-charcoal-blue-300: #10232d;
+  --color-charcoal-blue-400: #162f3c;
+  --color-charcoal-blue-500: #1b3a4b;
+  --color-charcoal-blue-600: #316987;
+  --color-charcoal-blue-700: #4b96be;
+  --color-charcoal-blue-800: #87b9d4;
+  --color-charcoal-blue-900: #c3dce9;
+
+  --color-deep-space-blue: #212f45;
+  --color-deep-space-blue-100: #07090e;
+  --color-deep-space-blue-200: #0d131c;
+  --color-deep-space-blue-300: #141c29;
+  --color-deep-space-blue-400: #1b2537;
+  --color-deep-space-blue-500: #212f45;
+  --color-deep-space-blue-600: #3c547c;
+  --color-deep-space-blue-700: #5a7baf;
+  --color-deep-space-blue-800: #91a7ca;
+  --color-deep-space-blue-900: #c8d3e4;
+
+  --color-space-indigo: #272640;
+  --color-space-indigo-100: #08080d;
+  --color-space-indigo-200: #100f1a;
+  --color-space-indigo-300: #171726;
+  --color-space-indigo-400: #1f1f33;
+  --color-space-indigo-500: #272640;
+  --color-space-indigo-600: #464573;
+  --color-space-indigo-700: #6866a3;
+  --color-space-indigo-800: #9a99c2;
+  --color-space-indigo-900: #cdcce0;
+
+  --color-midnight-violet: #312244;
+  --color-midnight-violet-100: #0a070e;
+  --color-midnight-violet-200: #140e1b;
+  --color-midnight-violet-300: #1d1529;
+  --color-midnight-violet-400: #271b36;
+  --color-midnight-violet-500: #312244;
+  --color-midnight-violet-600: #583e7a;
+  --color-midnight-violet-700: #7f5cad;
+  --color-midnight-violet-800: #aa92c8;
+  --color-midnight-violet-900: #d4c9e4;
+
+  --color-royal-violet: #3e1f47;
+  --color-royal-violet-100: #0c060e;
+  --color-royal-violet-200: #190c1c;
+  --color-royal-violet-300: #25132b;
+  --color-royal-violet-400: #321939;
+  --color-royal-violet-500: #3e1f47;
+  --color-royal-violet-600: #703880;
+  --color-royal-violet-700: #a055b4;
+  --color-royal-violet-800: #bf8ecd;
+  --color-royal-violet-900: #dfc6e6;
+
+  --color-deep-purple: #4d194d;
+  --color-deep-purple-100: #0f050f;
+  --color-deep-purple-200: #1f0a1f;
+  --color-deep-purple-300: #2e0f2e;
+  --color-deep-purple-400: #3e143e;
+  --color-deep-purple-500: #4d194d;
+  --color-deep-purple-600: #8b2d8b;
+  --color-deep-purple-700: #c346c3;
+  --color-deep-purple-800: #d784d7;
+  --color-deep-purple-900: #ebc1eb;
+}
