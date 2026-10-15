@@ -1,22 +1,38 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import NumberField from '../../components/NumberField/NumberField'
 import Die from './Die'
+import RollHistory from './RollHistory'
 import {
   DICE_SIDES,
   MAX_DICE,
   formatNotation,
   rollDice,
   type DieSides,
-  type RollResult,
 } from './dice'
+import {
+  addToHistory,
+  loadHistory,
+  saveHistory,
+  type HistoryEntry,
+} from './history'
 
 function DiceRoller() {
   const [count, setCount] = useState(1)
   const [modifier, setModifier] = useState(0)
-  const [lastRoll, setLastRoll] = useState<RollResult | null>(null)
+  const [history, setHistory] = useState<HistoryEntry[]>(loadHistory)
+
+  useEffect(() => {
+    saveHistory(history)
+  }, [history])
+
+  const lastRoll = history.at(0)
 
   function handleRoll(sides: DieSides) {
-    setLastRoll(rollDice({ sides, count, modifier }))
+    const entry: HistoryEntry = {
+      ...rollDice({ sides, count, modifier }),
+      id: crypto.randomUUID(),
+    }
+    setHistory((previous) => addToHistory(previous, entry))
   }
 
   return (
@@ -61,6 +77,8 @@ function DiceRoller() {
       ) : (
         <p className="text-xl">Clique sur un dé pour le lancer.</p>
       )}
+
+      <RollHistory entries={history} onClear={() => setHistory([])} />
     </section>
   )
 }

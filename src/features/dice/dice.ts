@@ -32,3 +32,7 @@ export function formatNotation({ sides, count, modifier }: RollRequest): string 
   if (modifier === 0) return base
   return modifier > 0 ? `${base}+${modifier}` : `${base}${modifier}`
 }
+
+export function isDieSides(value: unknown): value is DieSides {
+  return typeof value === 'number' && (DICE_SIDES as readonly number[]).includes(value)
+}
