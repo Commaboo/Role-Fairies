@@ -1,0 +1,17 @@
+@reference "../../index.css";
+
+.number-field {
+  @apply flex flex-col gap-1;
+}
+
+.number-field__label {
+  @apply text-sm text-deep-space-blue-800;
+}
+
+.number-field__input {
+  @apply w-24 rounded-lg border-2 border-charcoal-blue-500 bg-deep-space-blue-400 px-3 py-2 text-lg text-deep-space-blue-900;
+}
+
+.number-field__input:focus {
+  @apply border-stormy-teal-600 outline-none;
+}
