@@ -1,0 +1,13 @@
+@reference "../../index.css";
+
+.die {
+  @apply flex h-20 w-20 cursor-pointer items-center justify-center rounded-xl border-2 border-stormy-teal-600 bg-deep-space-blue-400 text-xl font-bold text-stormy-teal-800 transition;
+}
+
+.die:hover {
+  @apply border-stormy-teal-700 bg-deep-space-blue-500;
+}
+
+.die:active {
+  @apply scale-95;
+}

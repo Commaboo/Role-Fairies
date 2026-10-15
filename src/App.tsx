@@ -1,9 +1,10 @@
 import Layout from './components/Layout'
+import DiceRoller from './features/dice/DiceRoller'
 
 function App() {
   return (
     <Layout>
-      <h1 className="text-3xl font-bold">Lanceur de dés</h1>
+      <DiceRoller />
     </Layout>
   )
 }
